@@ -11,5 +11,5 @@ javascript_code=${javascript_code//\'/\\\'}
 bookmarklet_url="javascript:(function(){${javascript_code}})();"
 
 # Output the bookmarklet URL
-echo "Bookmarklet URL:"
+echo -n "" > dist.txt
 echo "$bookmarklet_url" >> dist.txt
