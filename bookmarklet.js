@@ -31,7 +31,7 @@ function fetchQuizletCards() {
             return cards;
         })
         .then(cards => {
-            const output = cards.map(card => `${card.term}##${card.definition}`).join('\n####\n');
+            const output = cards.map(card => `${card.term}##${card.definition}`).join('####');
             return output;
         })
         .catch(error => {
